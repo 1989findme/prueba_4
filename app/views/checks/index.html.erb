@@ -3,7 +3,11 @@
   <tr>
     <td><%= check.task.name %></td>
     <td><%= check.task.description %></td>
-    <td><%= check.task.photo %></td>
   </tr>
 <% end %>
+
+<tr>
+  <td>Total de tareas realizadas:</td>
+  <td><%= @checks.map{|check| check.task}. count %></td>
+</tr>
 </table>
