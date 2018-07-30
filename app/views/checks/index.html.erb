@@ -1,0 +1,9 @@
+<table class= "table">
+  <% @checks.each do | check | %>
+  <tr>
+    <td><%= check.task.name %></td>
+    <td><%= check.task.description %></td>
+    <td><%= check.task.photo %></td>
+  </tr>
+<% end %>
+</table>

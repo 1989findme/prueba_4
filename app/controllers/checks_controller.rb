@@ -11,4 +11,8 @@ class ChecksController < ApplicationController
 
     end
   end
+
+  def index
+    @checks = current_user.checks
+  end
 end
